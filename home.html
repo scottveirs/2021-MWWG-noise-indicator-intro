@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Ship Noise Workshop: Veirs presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+
+
+<style type="text/css">
+  .highlight-red {color: red}
+  .highlight-yellow {color: yellow}
+  mark {
+    background-color: black;
+  }
+</style>
+
+</head>
+
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      	<center> <h2>An introduction to Orcasound & <br>underwater noise indicators for Puget Sound</h2>
+	      	<img src="content/orca-ferry.png">
+	      	<h3>Scott Veirs, Orcasound hydrophone network</h3>
+	      	<h4>Marine Waters Workgroup meeting, Aug 18, 2021 (remote)</h4>
+	      	<div>
+			<audio preload="auto" controls="controls">
+	            	<source src="content/sounds/clear-calls-clicks.mp3" type="audio/mpeg">
+	      		</audio>
+		</div>
+	  	Slides at: <a href="http://orcasound.net/talks/2021-MWWG-noise-indicator-intro/home.html">orcasound.net/talks</a>
+    </center>
+    </section>
+
+    <section class="slide">
+	      	<h2>Existing hydrophone network<br>Assets that could help implement a underwater noise indicator within the Marine Water Quality Vital Sign</h2>
+		<h3>Outline (focus on real-time, continuous assets in WA):</h5>
+		<ol>
+		<li>Non-WA, Non-Orcasound assets you should know about
+		<li>Orcasound: a tool for SRKW+ research, management, <b>and</b> education
+		<li>Orcasound: a tool for characterizing underwater noise in critical habitat of Southern Resident killer whales (SRKWs)
+		<li>Vital Sign Revision Project and potential noise indicators 
+		</ol>
+<h5>About me:</h5>
+<ul>
+<li>UW Oceanography, PhD (2003)
+<li>15+ years SRKW bioacoustic research/teaching and coordinating Orcasound
+<li>President, Beam Reach (WA Social Purpose Corporation)
+<li>Chair of Marine Mammal Work Group within the Puget Sound Ecosystem Monitoring Program (2018-present) 
+</ul>
+    </section>
+
+
+    <section class="slide">
+	      	<h2>Non-WA or Non-Orcasound assets...</h2>
+		<h5>...that could help implement noise indicators, establish baselines, and monitor noise levels</h5>
+<table>
+
+<tr>
+<td>
+		<ul>
+		<li>Other cabled, real-time hydrophone assets in the Northeast Pacific
+			<ol>
+			<li>Canadian whale tracking infrastructure ($10M+ investments by ONC; DFO, ECHO, SIMRES++)	
+			<li>Lime Kiln Lighthouse - SMRU and The Whale Museum
+			<li>Outer coast U.S. assets ($100M investments: e.g OOI Newport node, MARS, U.S. Navy)
+			</ol>
+		<li>Autonomous recorders or other non-real-time hydrophones
+			<ol>
+			<li>Critical habitat NOAA assets (PALs, EARS, etc.)
+			<li>Many past deployments in SRKW habitat (APL/PALs, MARUs, HARPs, JASCO/SMRU, SoundTraps, etc.)
+			<li>Deployments on SRKWs (DTAGs)
+			</ol>
+		<li>Other real-time sources of SRKW detections and/or non-cabled audio: wavegliders (humpbacks); SMRU CABs 
+		<li>Vast and growing network of Salish Sea marine sensors, e.g. acoustic gliders (<a href="http://nvs.nanoos.org">NANOOS/NVS</a>)
+		</ul>
+</td>
+<td>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jAc74fEyRyznLXXP5Mpq3tk5daE" width="640" height="480"></iframe>
+</td>
+</tr>
+</table>
+    </section>
+
+
+    <section class="slide">
+	      	<h2>Orcasound</h2>
+		<h5>An evolving tool for SRKW conservation</h5>
+		<img src="content/vesselnoise-roadmap.png">
+		<p>The product of ~20 years of community scientists listening for whales, Orcasound is now a cooperative hydrophone network and an open source hardware/software project.
+    </section>
+
+ <section class="slide">
+      <h2>Orcasound 2021 map and membership</h2>
+      <h5>Cooperative of researchers, educators, & community scientists</h5>
+<table>
+<col style="width:50%">
+<col style="width:50%">
+<tr>
+<td>
+<ol>
+<li> Orca Network	 
+<li> Port Townsend Marine Science Center
+<li> Beam Reach & Colorado College 	
+<li> The Center for Whale Research
+<li> The Whale Trail	
+<li> Oceans Initiative	
+<li> Orca Behavior Institute	 
+<li> Whale Scout	 
+<li> Deep Green Wilderness	
+<li> Friends of Lime Kiln Society (FOLKS)	
+<li> Cetacean Research Technology	 
+<li> Pacific Mammal Research
+<li> LAB-core System Hydrophones
+<li> Vashon Nature Center
+<li> Sound Action (2021 pilot node on Vashon)
+</ol>
+<p>Physical exhibits include: </b> Seattle Aquarium; Port Townsend Marine Science Center; Langley Whale Center; Lime Kiln Visitor's Center (via FOLKS)</p>
+</td>
+<td>
+<center>
+<mark><span style="color:red;">Past</span> | <span style="color:green;">Current</span> | <span style="color:yellow;">Planned (2022)</span></mark>
+        <img src="content/2020map.png"><p>
+</center>
+</td>
+</tr>
+</table>
+      <p>You can <a href="http://www.orcasoud.net/join/">join Orcasound</a>, too! Just e-sign the <a href="https://docs.google.com/document/d/1OdKOICgPNHy7CkaHjzWMztH_zNir4UlbZbOdKtyRwI0/edit">MOA</a> and heed the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA license</a>.</p>
+    </section>
+
+
+    <section class="slide">
+                <h2>Orcasound hardware evolution</h2>
+                <h5>A listening node for less than $1000 (U.S.)!</h5>
+<table>
+        <col style="width:70%">
+        <col style="width:30%">
+<tr>
+<td>
+<p>Basic ingredients (and costs):</p>
+ 	<ul>
+                <li>($ 50) DIY stand</li>
+                <li>($300 x2) Hydrophones -- dual for redundancy, stereo listening, & bearing</li>
+                <li>($125) Pisound board -- 48/96/192 kHz/channel, stereo 24-bit ADC </li>
+                <li>($ 35) Raspberry Pi 3b+/4 -- single board computer</li>
+                <li>($ 35) Audio cables & waterproof box installed near the shoreline</li>
+                <li>($ 75) Power over Ethernet -- from box to 24-hour UPS & Internet router</li>
+              </ul>
+	      <h4>60% of cost is hydrophones!</h4>
+
+<p><a href="http://www.orcasound.net/2018/04/27/orcasounds-new-live-audio-solution-from-hydrophone-to-headphone-with-a-raspberry-pi-computer-and-hls-dash-streaming-software/">DIY Guide: How to build your own hydrophone node!</a>
+
+	      <h5>Research nodes cost 5-10x more...</h5>
+	      <h5>...for calibrated hydrophones sensitive from 10 Hz - 100 kHz.</h5>
+</td>
+        <td>
+		<img src="content/node-box.png" width="250">
+		<img src="content/hydro-stand.png" width="300">
+	</td>
+</tr>
+</table>
+    </section>
+
+
+    <section class="slide">
+      <h2>Orcasound software evolution</h2>
+<h5>2017 challenge: Can we make it easy to listen, cloud-based, & scalable?</h5>
+
+<p>Free open-source software to stream audio that "just works" on all devices/browsers</p>
+  <img src="content/screenshot-s3.png" height="500" align="right"><p>
+<ul>
+  <li>Linux, Docker
+  <li><b>ffmpeg</b> -- encodes audio data in two formats:
+  <ul>
+    <li>Compressed & lossy: HLS segments (<a href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">HTTP Live Streaming</a>)</li>
+    <li>Compressed, lossless: FLAC (<a href="https://xiph.org/flac/">Free Lossless Audio Codec</a>)</li>
+  </ul>
+</ul>
+
+<p>Amazon S3 for archiving data in the cloud</p>
+<ul>
+  <li>Orcanode scripts upload data files to Simple Storage Services (S3)</li>
+  <li>HLS & FLAC filenames contain datetime</li>
+  <li>Data buckets are public and accessible via AWS command line interface</li>
+</ul>
+
+<p><a href="https://github.com/orcasound/orcanode">Orcanode Github repository</a></p>
+    </section>
+
+
+
+    <section class="slide">
+        <h2>What's next for Orcasound?</h2>
+	<h5>Make “listening for whales” interactive and inform real-time end-users</h5>
+        <center>
+        <p>For free live-listening, browse to: <a href="http://live.orcasound.net">live.orcasound.net</a></p>
+
+        <table>
+        <col style="width:35%">
+        <col style="width:30%">
+        <col style="width:35%">
+          <tr align="center">
+            <td><img src="content/screenshot-live-tall.png" height="500" hspace="10"></td>
+            <td><img src="content/osv2-listen.png" height="500" hspace="10"></td>
+            <td><img src="content/osv2-admin-tall.png" height="500" hspace="10"></td>
+          </tr>
+        </table>
+        </center>
+	<p> Orcasound 1.0 player published Nov., 2018. Orcasound 2.0 launched fall, 2019.</p>
+	<p>Version 3.0 now in beta testing includes dynamic map, moderation UI, and new notification features.</p>
+    </section>
+
+    <section class="slide">
+	<h2>Orcasound for characterizing vessel noise</h2>
+	<h5>The bad news: Vessel noise dominates in Puget Sound & can mask <b><u>both</u></b> calls &amp; clicks</h5>
+      <table>
+        <tr>
+          <td width="50%">
+            <img src="content/peerJ_RL.png" width="600" align="left">
+            <h5>Frequencies of vessel noise overlap <br>with SRKW hearing and signals</h5>
+            <center>
+            <p>Veirs, Veirs, & Wood (<a href="https://peerj.com/articles/1657/">2016, PeerJ</a>)</p>
+            <p>Typical ship:
+                <audio preload="auto" controls="controls">
+                    <source src="content/sounds/ship-clattering.mp3" type="audio/mpeg">
+                </audio>
+            </p>
+            </center>
+         </td>
+         <td>
+            <img src="content/freq-fig.jpg">
+            <p>Squeaky ship:
+                <audio preload="auto" controls="controls">
+                    <source src="content/sounds/squeaky-ship.mp3" type="audio/mpeg" title="squeaky ship">
+                </audio>
+            </p>
+         </td>
+       </tr>
+     </table>
+    </section>
+
+
+    <section class="slide">
+        <h2>Vessel noise mitigation</h2>
+        <h5 text-align="center">The good news: there are many ways to "more than mitigate" vessel noise.</h5>
+        <center>
+        <table><tr><td width="50%">
+        <img src="content/class-spectra.png"
+        </td><td width="5%">
+        </td><td>
+        <img src="content/preprint-3dB.png"
+        </td></tr></table>
+        <p>
+	Operational (temporary) and technological (permanent) options (see <a href="https://www.sciencedirect.com/science/article/abs/pii/S0025326X18303229">Williams+2019</a>)</p>
+        </center>
+	<p>The <a href="https://maritimeblue.org/quiet-sound/">Quiet Sound</a> program will consider these options for Puget Sound commercial ships.</p>
+	<p>Orcasound's Shipnoise.net project developed a prototype in Dec., 2020, for ranking ships based on how much they raise noise levels above a node's "urban ambient" baseline level.</p>
+    </section>
+
+
+        <section class="slide">
+          <h2>Broadband received level peaks</h2>
+          <h5>Ships and boats have similar maxima, but ships last longer</h5>
+          <img src="content/65_JD_2458046_2017-10-19_hrs__to_12.jpg">
+        </section>
+
+        <section class="slide">
+          <h2>Validating noise peaks & speed with AIS, cameras, and radar</h2> 
+          <h5>Slow boats have lower maxima, but usually last longer than fast boats...</h5>
+          <img src="content/9_27_8am.jpg">
+          <p>Images from the U.Vic./<a href="http://www.orcasound.net/portfolio/salish-sea-vessel-research/">NEMES automated camera at Orcasound Lab</a>. Smooth curve (black) is 1200-second running average broadband dB level. Now also tracking boat type & speed with <a href="https://protectedseas.net/marine-monitor-m2">M2</a> AIS/radar/camera system.</h2>/p>
+        </section>
+
+       <section class="slide">
+        <h2>Monitoring ship noise in SRKW habitat</h2>
+        <h3>Urban ambient noise level: a baseline for "delta" noise metrics</h3>
+        <center>
+        <table><tr>
+	<td width="65%">
+	Maximum received noise level vs duration 
+        <img src="content/dBmaxVS_width.jpg"
+        <p>From <a href="http://orcasound.net/data/talks/2018-asa-vveirs">ASA 2019 talk by V.Veirs</a> with ref. to <i>Holt et al., 2017, "Noise levels received by endangered killer whales..."</i></p>
+        </td>
+	<td width="5%">
+        </td>
+	<td width="30%">
+	<p>Monitoring aircraft noise in Seattle</p>
+        <img src="content/aircraft-noise-monitor-map.jpg">
+        </td></tr></table>
+        </center>
+        </section>
+
+    <section class="slide">
+                <h2>Orcasound ambient noise studies</h2>
+                <h5>Across Puget Sound, mean noise levels vary seasonally & geographically.</h5>
+        <center>
+        <table>
+		<tr><td width="50%">
+				<img src="content/orcasound-ambient-noise-seasonal.png">
+				<p>Hourly means (of 2-second samples) at Orcasound Lab vary seasonally during daytime "boating hours" (11 a.m. to sunset)</p>
+        	</td><td width="5%">
+        	</td><td>
+			<img src="content/orcasound-ambient-noise-map.png">
+				<p>Spatial varition in annual (2008) mean broadband noise levels.</p>
+        	</td></tr>
+	</table>
+		<p>Source: <a href="https://beamreach.org/wiki/index.php?title=Ambient_noise_in_killer_whale_critical_habitat">Beam Reach reports to NOAA</a> (2006-2008)</p>
+                </center>
+    </section>
+
+    <section class="slide">
+        <center>
+                <h2>Precedents and ideas for underwater noise indicators</h2>
+                <h5></h5>
+		<table>
+                <tr><td width="50%">
+				<ol>
+					<li>Exceedance of old NOAA threshold for harrassment by chronic noise (120 dB broadband receive level)</li>
+					<li>European standard for long-term (annual) Good Environmental Status</li>
+					<ul>
+						<li><100 dB for <i>annual</i> mean 63 Hz 1/3-octave band level</li>
+						<li><100 dB for <i>annual</i> mean 125 Hz 1/3-octave band level</li>
+					</ul>
+					<li>Threshold relative to ambient noise statistical baseline (e.g. "urban ambient" of Veirs & Veirs, 2016)</li>
+					<li>Metrics developed for particular species and acoustic impacts (e.g. masking of SRKW echolocation; orca-weighted decibels)</li>
+				</ol>
+                </td><td width="5%">
+                </td><td>
+                        <img src="content/europe-lf-standards.png">
+                                <p>European low-frequency standards (Marine
+				Strategy Framework Directive; <a href="https://www.researchgate.net/publication/272740645_Marine_Strategy_Framework_Directive_-_Task_Group_11_Report_-_Underwater_noise_and_other_forms_of_energy">Tasker et al., 2010)</a>.</p>
+                </td></tr>
+        </table>
+    </section>
+
+
+    <section class="slide">
+        <center>
+                <h2>Questions?</h2>
+	</center>
+    </section>
+
+
+
+    <section class="slide">
+        <center>
+                <h2></h2>
+                <h5></h5>
+                <center>
+                <img src="content/">
+                </center>
+    </section>
+
+
+    <section class="slide">
+      <h2>Zones of bioacoustic impact from noise</h2>
+      <table>
+        <tr>
+          <td>
+            <ol>
+              <li>Injury (acoustic trauma, or stranding)
+              <li><b>Deafening (permanent or temporary threshold shift)</b>
+              <li><b>Behavioral change</b> (can also be due to physical proximity or interference)
+              <li><b>Masking</b> of signals and cues 
+              <li><b>Stress</b> (e.g. from chronic noise)
+              <li><b>Audibility</b>
+            </ol>
+          </td>
+          <td width="33%">
+            <img src="content/erbe-zones.png">
+          </td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section class="slide">
+      <h2>Potential impacts of noise on southern resident killer whales (SRKWs)</h2>
+      <table>
+        <tr>
+          <td>
+            <ol>
+	      <li>Injury (L112? J34?)
+	      <li>Stranding (observed in other toothed whales, but not SRKWs)</li>
+              <li><b>Deafening (permanent or temporary)</b>
+                <ul>
+                <li>What explosives were used near SRKWs during the capture era, and previously?
+                <li>Pile driving?
+                    <audio preload="auto" controls="controls">
+			<source src="content/sounds/pile-driving-5sec.mp3" type="audio/mpeg">
+                    	<source src="content/sounds/pile-driving-5sec.ogg" type="audio/ogg">
+                  </audio>
+                <li>MFA sonar:<audio src="content/sounds/sonar-canadian.mp3" controls="true"></audio> (HMS Ottawa, 2012)
+                <li>Naval detonations:<audio src="content/sounds/detonation-dm211-2_06_2012.mp3" controls="true"></audio> (HMS Ottawa, 2012)
+                </ul>
+              <li><b>Behavioral change</b> (can also be due to physical proximity or interference)
+              <li><b>Masking</b> of signals and cues (mostly by vessels)
+              <li><b>Stress</b> (e.g. from chronic noise)
+            </ol>
+          </td>
+          <td width="33%">
+            <img src="content/right-whale-stress-911-rolland+2012.png">
+            Right whale stress fell after 9/11 decreased ship noise in 2001 (Rolland et al., 2012)
+          </td>
+        </tr>
+      </table>
+    </section>
+
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+</div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
